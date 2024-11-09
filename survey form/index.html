@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <header>
+        <h1>Assessment Survey Form For FreeCodeCamp</h1>
+    <p><i>Thank you for taking the time to help us improve the platform.</i></p>
+    </header>
+
+    <form id="Survey-Form">
+        <div class="form-group">
+            <label for="name">First name</label><br>
+        <input type="text" placeholder="input your first name" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="name">Last name</label><br>
+        <input type="text" placeholder="input your last name" required>
+        </div><br>
+
+            <div class="form-group">
+                <label for="Email">Email</label><br>
+            <input type="text" placeholder="input your Email" required>
+            </div><br>
+
+                <div class="form-group">
+                    <label for="Age">Age</label><br>
+                <input type="number" max="65" min="7" placeholder="Age" required>
+                </div><br>
+
+                    <div class="form-group">
+                        <label for="Date">Date Joined</label><br>
+                    <input type="date" required>
+                    </div><br>
+
+                    <h2>What best describe your current role?</h2><br>
+                    <div class="input-radio">
+                        <label for="role">Student</label>
+                        <input type="radio">
+
+                        <label for="role">Full-time</label>
+                        <input type="radio">
+
+                        <label for="role">Part-time</label>
+                        <input type="radio">
+
+                        <label for="role">Other</label>
+                        <input type="radio">
+                      </div>
+                      <br><br>
+
+                        <div class="form-group">
+                            <h2>How do you know about this platform?</h2>
+                        <select id="dropdown" name="awareness" class="form-control" required>
+                            <option disable selected value>choose an option</option>
+                            <option value="Introduced by Friends/Family">Introduced by Friends/Family</option> 
+                            <option value="Social Media">Social Media</option>
+                            <option value="E-mail">E-mail</option>
+                            <option value="Advertisement">Advertisement</option>
+                        </select>
+                    </div><br>
+
+                            <div class="form-group">
+                               <h2>What can you say about this platform</h2>
+                               <textarea name="" id="comment" placeholder="type your comment here..."></textarea>
+                            </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="submit-btn">Submit</button>
+                        </div>
+    </form>
+   </div>
+</body>
+</html>
